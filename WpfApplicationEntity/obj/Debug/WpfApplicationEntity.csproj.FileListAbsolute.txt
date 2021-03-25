@@ -1,0 +1,65 @@
+D:\PRJ\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojResolveAssemblyReference.cache
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.baml
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\GroupWindow.g.cs
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.g.cs
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\App.g.cs
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.cache
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.lref
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.pdb
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.dll
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.xml
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\GroupWindow.baml
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.g.resources
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.Properties.Resources.resources
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.Cache
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
+C:\Учёба 3 курс\Курсовая работа КПЯП\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
+F:\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+F:\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe
+F:\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.pdb
+F:\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.dll
+F:\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.dll
+F:\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.xml
+F:\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.xml
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojAssemblyReference.cache
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.baml
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\GroupWindow.g.cs
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.g.cs
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\App.g.cs
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.cache
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.lref
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\GroupWindow.baml
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.g.resources
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.Properties.Resources.resources
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.cache
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CoreCompileInputs.cache
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CopyComplete
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
+F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojAssemblyReference.cache
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\GroupWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\App.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.cache
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.lref
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.pdb
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.dll
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.dll
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.xml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.xml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\GroupWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.g.resources
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.Properties.Resources.resources
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.cache
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CoreCompileInputs.cache
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CopyComplete
