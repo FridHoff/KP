@@ -29,7 +29,7 @@ namespace WpfApplicationEntity.API
         [Required]
         public string phone { get; set; }
         [Required]
-        public string pisitipn_set_date { get; set; }       
+        public string position_set_date { get; set; }       
         public virtual ICollection<Shop> shop { get; set; }
     }
 }

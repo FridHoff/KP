@@ -43,7 +43,6 @@ F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
 F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojAssemblyReference.cache
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.baml
-F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\GroupWindow.g.cs
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.g.cs
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\App.g.cs
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.cache
@@ -57,9 +56,16 @@ F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityF
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.dll
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.xml
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.xml
-F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\GroupWindow.baml
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.g.resources
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.Properties.Resources.resources
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.cache
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CoreCompileInputs.cache
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CopyComplete
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.baml
