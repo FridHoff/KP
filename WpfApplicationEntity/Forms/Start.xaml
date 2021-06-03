@@ -8,7 +8,7 @@
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
         <Button Content="Войти" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <TextBox x:Name="login" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="pass" HorizontalAlignment="Left" Height="23" Margin="10,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Webdings" TextDecorations="Underline" FontWeight="Bold" FontStyle="Italic"/>
+        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Height="23" Margin="10,90,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

@@ -1,0 +1,143 @@
+﻿<Window x:Class="WpfApplicationEntity.Forms.ForemanWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationEntity.Forms"
+        mc:Ignorable="d"
+        Title="ForemanWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem x:Name="employeesTab">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Сотрудники</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <WrapPanel>
+                            <TextBox x:Name="searchEmployee"  Margin="3" Padding="3" Width="100" TextChanged="searchEmployee_TextChanged"></TextBox>
+                        </WrapPanel>
+                        <DataGrid AutoGenerateColumns="False" x:Name="employeesGrid" IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding ID}" Header="Id" Visibility="Hidden"/>
+                                <DataGridTextColumn Binding="{Binding fName}" Header="Фамилия"/>
+                                <DataGridTextColumn Binding="{Binding name}" Header="Имя"/>
+                                <DataGridTextColumn Binding="{Binding lName}" Header="Отчество"/>
+                                <DataGridTextColumn Binding="{Binding position}" Header="Должность"/>
+                                <DataGridTextColumn Binding="{Binding login}" Header="Логин" Visibility="Hidden"/>
+                                <DataGridTextColumn Binding="{Binding password}" Header="Пароль" Visibility="Hidden"/>
+                                <DataGridTextColumn Binding="{Binding birth_date}" Header="Дата рождения"/>
+                                <DataGridTextColumn Binding="{Binding address}" Header="Адрес"/>
+                                <DataGridTextColumn Binding="{Binding phone}" Header="Телефон"/>
+                                <DataGridTextColumn Binding="{Binding position_set_date}" Header="Дата назначения на должность"/>
+                                <DataGridTextColumn Binding="{Binding shop.number}" Header="Цех"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="productTab">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Продукция</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <WrapPanel>
+                            <Button x:Name="addProductButton"  Content="Добавить" Margin="3" Padding="3" Click="addProductButton_Click"></Button>
+                            <Button x:Name="editProductButton"  Content="Изменить" Margin="3" Padding="3" Click="editProductButton_Click"></Button>
+                            <Button x:Name="deleteProductButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteProductButton_Click"></Button>
+                            <Button x:Name="ReportProductButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportProductButton_Click"></Button>
+                        </WrapPanel>
+                        <DataGrid AutoGenerateColumns="False" x:Name="productsGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding ID}" Header="Id" Visibility="Hidden"/>
+                                <DataGridTextColumn Binding="{Binding name}" Header="Наименование"/>
+                                <DataGridTextColumn Binding="{Binding price}" Header="Цена"/>
+                                <DataGridTextColumn Binding="{Binding shelf_life}" Header="Срок годности"/>
+                                <DataGridTextColumn Binding="{Binding type.name}" Header="Вид продукции"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem  x:Name="planTab">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">План производства</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <WrapPanel>
+                            <Button x:Name="addPlanButton"  Content="Добавить" Margin="3" Padding="3" Click="addPlanButton_Click"></Button>
+                            <Button x:Name="editPlanButton"  Content="Изменить" Margin="3" Padding="3" Click="editPlanButton_Click"></Button>
+                            <Button x:Name="deletePlanButton"  Content="Удалить" Margin="3" Padding="3" Click="deletePlanButton_Click"></Button>
+                            <Button x:Name="ReportPlanButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportPlanButton_Click"></Button>
+                        </WrapPanel>
+                        <DataGrid AutoGenerateColumns="False" x:Name="plansGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
+                                <DataGridTextColumn Binding="{Binding date}" Header="Дата"/>
+                                <DataGridTextColumn Binding="{Binding count}" Header="Количество"/>
+                                <DataGridTextColumn Binding="{Binding shop.number}" Header="Цех"/>
+                                <!--<DataGridTextColumn Binding="{Binding product.name}" Header="Продукция"/>-->
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem  x:Name="product_in_stockTab">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Продукция на складе</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <WrapPanel>
+                            <Button x:Name="addProduct_in_stockButton"  Content="Добавить" Margin="3" Padding="3" Click="addProduct_in_stockButton_Click"></Button>
+                            <Button x:Name="editProduct_in_stockButton"  Content="Изменить" Margin="3" Padding="3" Click="editProduct_in_stockButton_Click"></Button>
+                            <Button x:Name="deleteProduct_in_stockButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteProduct_in_stockButton_Click"></Button>
+                            <Button x:Name="ReportProduct_in_stockButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportProduct_in_stockButton_Click"></Button>
+                        </WrapPanel>
+                        <DataGrid AutoGenerateColumns="False" x:Name="product_in_stockGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
+                                <DataGridTextColumn Binding="{Binding count}" Header="Количество"/>
+                                <DataGridTextColumn Binding="{Binding manufacture_date}" Header="Дата изготовления"/>
+                                <DataGridTextColumn Binding="{Binding shop.number}" Header="Цех"/>
+                                <DataGridTextColumn Binding="{Binding product.name}" Header="Продукт"/>
+                                <DataGridTextColumn Binding="{Binding employee.fName}" Header="Сотрудник"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem  x:Name="product_typeTab">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Вид продукции</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <WrapPanel>
+                            <Button x:Name="ReportProduct_typeButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportProduct_typeButton_Click"></Button>
+                        </WrapPanel>
+                        <DataGrid AutoGenerateColumns="False" x:Name="product_typeGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
+                                <DataGridTextColumn Binding="{Binding name}" Header="Наименование"/>
+                                <DataGridTextColumn Binding="{Binding shop.number}" Header="Цех"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

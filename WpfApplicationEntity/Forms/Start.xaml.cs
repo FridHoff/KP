@@ -30,12 +30,27 @@ namespace WpfApplicationEntity.Forms
                 bool flag=true;
                 foreach(WpfApplicationEntity.API.Employee employee in objectMyDBContext.Employees.ToList())
                 {
-                if (login.Text == employee.login && pass.Text==employee.password)
+                if (login.Text == employee.login && pass.Password==employee.password)
                 {
+                        if(employee.position=="Администратор")
+                        {
                     MainWindow main = new MainWindow(employee);
                     this.Hide();
                     main.Show();
-                    flag = false;
+                        }
+                        if (employee.position == "Начальник цеха")
+                        {
+                            ForemanWindow main = new ForemanWindow(employee);
+                            this.Hide();
+                            main.Show();
+                        }
+                        if (employee.position == "Кладовщик")
+                        {
+                            ForemanWindow main = new ForemanWindow(employee);
+                            this.Hide();
+                            main.Show();
+                        }
+                        flag = false;
                     break;
                 }
                 }

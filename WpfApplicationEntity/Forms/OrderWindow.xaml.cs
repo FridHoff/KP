@@ -45,6 +45,9 @@ namespace WpfApplicationEntity.Forms
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)
         {           
+            try
+            {
+
                 if (date.Text != string.Empty
                     && count.Text != string.Empty
                     && customer.Text != string.Empty
@@ -89,6 +92,11 @@ namespace WpfApplicationEntity.Forms
                     MessageBox.Show("Заполните все поля!", "Ошибка!");
                     this.DialogResult = false;
                 }
+            }
+            catch
+            {
+                MessageBox.Show("Не все поля заполнены корректными данными!", "Ошибка!");
+            }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

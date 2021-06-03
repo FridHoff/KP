@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 H:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\App.xaml
-11-276311939
+13-1965803628
 
-28-578176571
+30118808801
 17454831777
-Forms\CustomerWindow.xaml;Forms\EmployeeWindow.xaml;Forms\OrderWindow.xaml;Forms\PlanWindow.xaml;Forms\ProductWindow.xaml;Forms\Product_in_stockWindow.xaml;Forms\Product_typeWindow.xaml;Forms\ShipmentWindow.xaml;Forms\ShopWindow.xaml;Forms\MainWindow.xaml;Forms\Start.xaml;
+Forms\CustomerWindow.xaml;Forms\EmployeeWindow.xaml;Forms\ForemanWindow.xaml;Forms\OrderWindow.xaml;Forms\PlanWindow.xaml;Forms\ProductWindow.xaml;Forms\Product_in_stockWindow.xaml;Forms\Product_typeWindow.xaml;Forms\ShipmentWindow.xaml;Forms\ShopWindow.xaml;Forms\MainWindow.xaml;Forms\Start.xaml;Forms\StorekeeperWindow.xaml;
 
-False
+True
 
