@@ -41,7 +41,6 @@ F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.cspr
 F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CopyComplete
 F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
 F:\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
-F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojAssemblyReference.cache
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.baml
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.g.cs
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\App.g.cs
@@ -59,8 +58,6 @@ F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityF
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.g.resources
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.Properties.Resources.resources
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.cache
-F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CoreCompileInputs.cache
-F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CopyComplete
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.g.cs
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.baml
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.g.cs
@@ -69,3 +66,178 @@ F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\C
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.g.cs
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.baml
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.pdb
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.dll
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.dll
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.xml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.xml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojAssemblyReference.cache
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\App.g.cs
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.cache
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.lref
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.baml
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.g.resources
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.Properties.Resources.resources
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.cache
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CoreCompileInputs.cache
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CopyComplete
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
+E:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.pdb
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.dll
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.dll
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.xml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.xml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojResolveAssemblyReference.cache
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\App.g.cs
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.cache
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.lref
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.g.resources
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.Properties.Resources.resources
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.Cache
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Start.baml
+H:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Start.g.cs
+D:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+D:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
+D:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojAssemblyReference.cache
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Start.baml
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Start.g.cs
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CoreCompileInputs.cache
+F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CopyComplete
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.pdb
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.dll
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.dll
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.xml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.xml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojResolveAssemblyReference.cache
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Start.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Start.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\App.g.cs
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.cache
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.lref
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.baml
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.g.resources
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.Properties.Resources.resources
+Z:\Курсовая 2\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.Cache
+H:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+H:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
+H:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csprojAssemblyReference.cache
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Start.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\MainWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Start.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\App.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.cache
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity_MarkupCompile.lref
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.exe
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.pdb
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe.config
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.exe
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\WpfApplicationEntity.pdb
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.dll
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.dll
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.xml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\bin\Debug\EntityFramework.SqlServer.xml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\CustomerWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\EmployeeWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\OrderWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\PlanWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ProductWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_in_stockWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\Product_typeWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShipmentWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ShopWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.g.resources
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.Properties.Resources.resources
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.cache
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CoreCompileInputs.cache
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CopyComplete

@@ -18,15 +18,23 @@ namespace WpfApplicationEntity.Forms
     /// </summary>
     public partial class ShopWindow : Window
     {
-        private bool add_edit;
+        private bool add_edit=false;
+        int index;
         public ShopWindow()
         {
             InitializeComponent();
         }
-        public ShopWindow(bool add_edit)
+        public ShopWindow(int id)
         {
             InitializeComponent();
-            this.add_edit = add_edit;
+            this.add_edit = true;
+            index = id;
+            using (WpfApplicationEntity.API.MyDBContext objectMyDBContext = new WpfApplicationEntity.API.MyDBContext())
+            {
+                WpfApplicationEntity.API.Shop shop = WpfApplicationEntity.API.DatabaseRequest.GetShopsById(objectMyDBContext, index);
+                textBlockAddEditShop.Text = shop.number.ToString();
+            }
+            ButtonAddEditShop.Content = "Изменить";      
         }
 
         private void ButtonAddEditShop_Click(object sender, RoutedEventArgs e)
@@ -35,16 +43,27 @@ namespace WpfApplicationEntity.Forms
                 if (textBlockAddEditShop.Text != string.Empty)
                 {
                     WpfApplicationEntity.API.Shop objectShop = new WpfApplicationEntity.API.Shop();
-                    objectShop.number = Convert.ToInt32(textBlockAddEditShop.Text);
+                    objectShop.number = textBlockAddEditShop.Text;
                     try
                     {
                         using (WpfApplicationEntity.API.MyDBContext objectMyDBContext =
-                            new WpfApplicationEntity.API.MyDBContext())
+                         new WpfApplicationEntity.API.MyDBContext())
                         {
-                            objectMyDBContext.Shops.Add(objectShop);
+                            if (add_edit == false)
+                                objectMyDBContext.Shops.Add(objectShop);
+                            else
+                            {
+                                objectShop.ID = index;
+                                WpfApplicationEntity.API.Shop objectFromDataBase = new WpfApplicationEntity.API.Shop();
+                                objectFromDataBase = WpfApplicationEntity.API.DatabaseRequest.GetShopsById(objectMyDBContext, index);
+                                objectMyDBContext.Entry(objectFromDataBase).CurrentValues.SetValues(objectShop);
+                            }
                             objectMyDBContext.SaveChanges();
                         }
-                        MessageBox.Show("Цех добавлен");
+                        if (add_edit == false)
+                            MessageBox.Show("Продукт добавлен");
+                        else
+                            MessageBox.Show("Продукт изменён");
                         this.DialogResult = true;
                     }
                     catch (Exception ex)

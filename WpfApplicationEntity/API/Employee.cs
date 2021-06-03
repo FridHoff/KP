@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WpfApplicationEntity.API
 {
-    class Employee
+    public class Employee
     {
         [Key]
         public int ID { get; set; }
@@ -29,7 +29,9 @@ namespace WpfApplicationEntity.API
         [Required]
         public string phone { get; set; }
         [Required]
-        public string position_set_date { get; set; }       
-        public virtual ICollection<Shop> shop { get; set; }
+        public string position_set_date { get; set; }
+        public virtual Shop shop { get; set; }
+        public virtual ICollection<Order> order { get; set; }
+        public virtual ICollection<Product_in_stock> product { get; set; }
     }
 }

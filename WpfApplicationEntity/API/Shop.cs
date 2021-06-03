@@ -6,11 +6,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WpfApplicationEntity.API
 {
-    class Shop
+    public class Shop
     {
         [Key]
         public int ID { get; set; }
         [Required]
-        public int number { get; set; }
+        public string number { get; set; }
+        public virtual ICollection<Employee> Employee { get; set; }
+        public virtual ICollection<Product_Type> type { get; set; }
+        public virtual ICollection<Production_plan> plan { get; set; }
+        public virtual ICollection<Product_in_stock> product { get; set; }
     }
 }

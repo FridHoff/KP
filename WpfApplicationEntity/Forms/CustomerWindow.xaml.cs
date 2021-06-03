@@ -19,22 +19,30 @@ namespace WpfApplicationEntity.Forms
     /// </summary>
     public partial class CustomerWindow : Window
     {
-        private bool add_edit;
+        private bool add_edit=false;
+        int index;
         public CustomerWindow()
         {
             InitializeComponent();
         }
-        public CustomerWindow(bool add_edit)
+        public CustomerWindow(int id)
         {
             InitializeComponent();
-            this.add_edit = add_edit;
+            this.add_edit = true;
+            index = id;
+            using (WpfApplicationEntity.API.MyDBContext objectMyDBContext = new WpfApplicationEntity.API.MyDBContext())
+            {
+                WpfApplicationEntity.API.Customer customer = WpfApplicationEntity.API.DatabaseRequest.GetCustomerById(objectMyDBContext, index);                        
+                textBlockAddEditaddress.Text = customer.address;
+                textBlockAddEditname.Text = customer.Name;
+                textBlockAddEditlphone.Text = customer.phone;               
+            }
+            ButtonAddEdit.Content = "Изменить";
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)
-        {
-            if (this.add_edit == true)
-                if (textBlockAddEditaddress.Text != string.Empty
-                    && textBlockAddEditaddress.Text != string.Empty
+        {           
+                if (textBlockAddEditaddress.Text != string.Empty                    
                     && textBlockAddEditlphone.Text != string.Empty
                     && textBlockAddEditname.Text != string.Empty)      
                 {
@@ -47,10 +55,21 @@ namespace WpfApplicationEntity.Forms
                         using (WpfApplicationEntity.API.MyDBContext objectMyDBContext =
                             new WpfApplicationEntity.API.MyDBContext())
                         {
-                            objectMyDBContext.Customers.Add(objectCustomer);
+                            if (add_edit == false)
+                                objectMyDBContext.Customers.Add(objectCustomer);
+                            else
+                            {
+                                objectCustomer.ID = index;
+                                WpfApplicationEntity.API.Customer objectFromDataBase = new WpfApplicationEntity.API.Customer();
+                                objectFromDataBase = WpfApplicationEntity.API.DatabaseRequest.GetCustomerById(objectMyDBContext, index);
+                                objectMyDBContext.Entry(objectFromDataBase).CurrentValues.SetValues(objectCustomer);
+                            }
                             objectMyDBContext.SaveChanges();
                         }
-                        MessageBox.Show("Заказчик добавлен");
+                        if (add_edit == false)
+                            MessageBox.Show("Заказчик добавлен");
+                        else
+                            MessageBox.Show("Заказчик изменён");
                         this.DialogResult = true;
                     }
                     catch (Exception ex)

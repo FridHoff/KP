@@ -5,21 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplicationEntity.Forms"
         mc:Ignorable="d"
-        Title="Plan" Height="120" Width="200">
+        Loaded="Window_Loaded"
+        Title="Plan" Height="132" Width="200">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <!--<RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Grid.Column="0" Grid.Row="0" Content="Дата" Padding="3" Margin="3"  />
-        <TextBox x:Name="date" Grid.Column="1" Grid.Row="0" Padding="3" Margin="3"  />
+        <DatePicker x:Name="date" Grid.Column="1" Grid.Row="0" Padding="3" Margin="3"  />
         <Label Grid.Column="0" Grid.Row="1" Content="Цех" Padding="3" Margin="3"  />
-        <TextBox x:Name="shop" Grid.Column="1" Grid.Row="1" Padding="3" Margin="3"  />
+        <ComboBox x:Name="shop" Grid.Column="1" Grid.Row="1" Padding="3" Margin="3" SelectedIndex="0" />
+        <!--<Label Grid.Column="0" Grid.Row="2" Content="Product" Padding="3" Margin="3"  />
+        <ComboBox x:Name="product" Grid.Column="1" Grid.Row="2" Padding="3" Margin="3" SelectedIndex="0" />-->
         <Button x:Name="ButtonAddEdit"  Grid.Column="0" Grid.Row="12" Content="Добавить" Grid.ColumnSpan="2" Padding="3" Margin="3" Click="ButtonAddEdit_Click"  />
     </Grid>
 </Window>

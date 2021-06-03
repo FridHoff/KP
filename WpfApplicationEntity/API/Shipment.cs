@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WpfApplicationEntity.API
 {
-    class Shipment
+    public class Shipment
     {
         [Key]
         public int ID { get; set; }
@@ -16,6 +16,7 @@ namespace WpfApplicationEntity.API
         public string receiving_date { get; set; }
         [Required]
         public int count { get; set; }
-        public virtual ICollection<Order> order { get; set; }        
+        public virtual Order Order { get; set; }
+        public virtual Product_in_stock product_in_stock { get; set; }
     }
 }

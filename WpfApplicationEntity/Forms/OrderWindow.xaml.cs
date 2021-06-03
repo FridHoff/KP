@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApplicationEntity.API;
 
 namespace WpfApplicationEntity.Forms
 {
@@ -19,36 +20,63 @@ namespace WpfApplicationEntity.Forms
     /// </summary>
     public partial class OrderWindow : Window
     {
-        private bool add_edit;
-        public OrderWindow()
+        private bool add_edit=false;
+        int index;
+        Employee user;
+        public OrderWindow(Employee user)
         {
             InitializeComponent();
+            this.user = user;
         }
-        public OrderWindow(bool add_edit)
+        public OrderWindow(int id, Employee user)
         {
             InitializeComponent();
-            this.add_edit = add_edit;
+            this.add_edit = true;
+            index = id;
+            this.user = user;
+            using (WpfApplicationEntity.API.MyDBContext objectMyDBContext = new WpfApplicationEntity.API.MyDBContext())
+            {
+                WpfApplicationEntity.API.Order order = WpfApplicationEntity.API.DatabaseRequest.GetOrdersById(objectMyDBContext, index);
+                date.Text = order.date;
+                count.Text = order.count.ToString();                
+            }
+            ButtonAddEdit.Content = "Изменить";
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)
-        {
-            if (this.add_edit == true)
+        {           
                 if (date.Text != string.Empty
-                    && employee.Text != string.Empty
-                    && customer.Text != string.Empty)
+                    && count.Text != string.Empty
+                    && customer.Text != string.Empty
+                    && product.Text != string.Empty)
                 {
                     WpfApplicationEntity.API.Order objectOrder = new WpfApplicationEntity.API.Order();
                     objectOrder.date = date.Text;
-                    objectOrder.status = status.IsEnabled;                   
+                    objectOrder.status = status.IsEnabled;
+                    objectOrder.customer = findCust(customer.SelectedItem.ToString());
+                    objectOrder.product = findProd(product.SelectedItem.ToString());
+                    objectOrder.count = Convert.ToInt32(count.Text);
+                    objectOrder.employee = user;
                     try
                     {
                         using (WpfApplicationEntity.API.MyDBContext objectMyDBContext =
-                            new WpfApplicationEntity.API.MyDBContext())
+                          new WpfApplicationEntity.API.MyDBContext())
                         {
-                            objectMyDBContext.Orders.Add(objectOrder);
+                            if (add_edit == false)
+                                objectMyDBContext.Orders.Add(objectOrder);
+                            else
+                            {
+                                objectOrder.ID = index;
+                                WpfApplicationEntity.API.Order objectFromDataBase = new WpfApplicationEntity.API.Order();
+                                objectFromDataBase = WpfApplicationEntity.API.DatabaseRequest.GetOrdersById(objectMyDBContext, index);
+                                objectMyDBContext.Entry(objectFromDataBase).CurrentValues.SetValues(objectOrder);
+                            }
                             objectMyDBContext.SaveChanges();
                         }
-                        MessageBox.Show("Заказ добавлен");
+                        if (add_edit == false)
+                            MessageBox.Show("Заказ добавлен");
+                        else
+                            MessageBox.Show("Заказ изменён");
                         this.DialogResult = true;
                     }
                     catch (Exception ex)
@@ -61,6 +89,55 @@ namespace WpfApplicationEntity.Forms
                     MessageBox.Show("Заполните все поля!", "Ошибка!");
                     this.DialogResult = false;
                 }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            using (MyDBContext DB = new MyDBContext())
+            {
+                List<string> pNames = new List<string>();
+                var products = DatabaseRequest.GetProduct(DB);
+                foreach (var item in products)
+                {
+                    pNames.Add(item.name.ToString());
+                }
+                product.ItemsSource = pNames;
+                var customers = DatabaseRequest.GetCustomer(DB);
+                List<string> cNames = new List<string>();
+                foreach (var item in customers)
+                {
+                    cNames.Add(item.Name.ToString());
+                }
+                customer.ItemsSource = cNames;
+            }
+        }
+        private Customer findCust(string custName)
+        {
+            Customer cust=new Customer();
+            using (MyDBContext DB = new MyDBContext())
+            {               
+                var customers = DatabaseRequest.GetCustomer(DB);
+                foreach (var item in customers)
+                {
+                    if (custName == item.Name.ToString())
+                        cust = item;
+                }                
+            }
+            return cust;
+        }
+        private Product findProd(string ProdName)
+        {
+            Product prod = new Product();
+            using (MyDBContext DB = new MyDBContext())
+            {
+                var customers = DatabaseRequest.GetProduct(DB);
+                foreach (var item in customers)
+                {
+                    if (ProdName == item.name.ToString())
+                        prod = item;
+                }
+            }
+            return prod;
         }
     }
 }

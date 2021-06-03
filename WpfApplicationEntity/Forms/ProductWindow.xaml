@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplicationEntity.Forms"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="ProductWindow" Height="190" Width="200">
     <Grid>
         <Grid.RowDefinitions>
@@ -23,9 +24,9 @@
         <Label Grid.Column="0" Grid.Row="1" Content="Цена" Padding="3" Margin="3"  />
         <TextBox x:Name="textBlockAddEditprice" Grid.Column="1" Grid.Row="1" Padding="3" Margin="3"  />
         <Label Grid.Column="0" Grid.Row="2" Content="Срок годности" Padding="3" Margin="3"  />
-        <TextBox x:Name="textBlockAddEditlshelf_life" Grid.Column="1" Grid.Row="2" Padding="3" Margin="3"  />
+        <TextBox x:Name="textBlockAddEditlshelf_life" Grid.Column="1" Grid.Row="2" Padding="3" Margin="3"  />        
         <Label Grid.Column="0" Grid.Row="3" Content="Вид" Padding="3" Margin="3"  />
-        <TextBox x:Name="textBlockAddEditltype" Grid.Column="1" Grid.Row="2" Padding="3" Margin="3"  />
+        <ComboBox x:Name="type" Grid.Column="1" Grid.Row="3" Padding="3" Margin="3"  SelectedIndex="0"/>
         <Button x:Name="ButtonAddEdit"  Grid.Column="0" Grid.Row="12" Content="Добавить" Grid.ColumnSpan="2" Padding="3" Margin="3" Click="ButtonAddEdit_Click"  />
     </Grid>
 </Window>

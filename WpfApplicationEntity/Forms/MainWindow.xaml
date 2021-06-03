@@ -1,7 +1,7 @@
 ﻿<Window x:Class="WpfApplicationEntity.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Entity Framework" Height="350" Width="525" Loaded="Window_Loaded">
+        Title="Entity Framework" Height="350" Width="600" Loaded="Window_Loaded">
     <Grid>
         <TabControl>
             <TabItem x:Name="employeesTab">
@@ -14,15 +14,19 @@
                     <StackPanel>
                         <WrapPanel>
                             <Button x:Name="addEmployeeButton"  Content="Добавить" Margin="3" Padding="3" Click="addEmployeeButton_Click"></Button>
-                            <Button x:Name="editEmployeeButton"  Content="Изменить" Margin="3" Padding="3"></Button>
-                            <Button x:Name="deleteGroupButton"  Content="Удалить" Margin="3" Padding="3"></Button>
+                            <Button x:Name="editEmployeeButton"  Content="Изменить" Margin="3" Padding="3" Click="editEmployeeButton_Click"></Button>
+                            <Button x:Name="deleteGroupButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteGroupButton_Click"></Button>
+                            <Button x:Name="ReportEmployeeButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportEmployeeButton_Click"></Button>
+                            <TextBox x:Name="searchEmployee"  Margin="3" Padding="3" Width="100" TextChanged="searchEmployee_TextChanged"></TextBox>
+                            <Button x:Name="Export"  Content="Экспорт" Margin="3" Padding="3" Click="Export_Click"></Button>
+                            <Button x:Name="Import"  Content="Импорт" Margin="3" Padding="3" Click="Import_Click"></Button>
                         </WrapPanel>
                         <DataGrid AutoGenerateColumns="False" x:Name="employeesGrid" IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="Id" Visibility="Hidden"/>
                                 <DataGridTextColumn Binding="{Binding fName}" Header="Фамилия"/>
                                 <DataGridTextColumn Binding="{Binding name}" Header="Имя"/>
-                                <DataGridTextColumn Binding="{Binding lname}" Header="Отчество"/>
+                                <DataGridTextColumn Binding="{Binding lName}" Header="Отчество"/>
                                 <DataGridTextColumn Binding="{Binding position}" Header="Должность"/>
                                 <DataGridTextColumn Binding="{Binding login}" Header="Логин"/>
                                 <DataGridTextColumn Binding="{Binding password}" Header="Пароль"/>
@@ -30,7 +34,7 @@
                                 <DataGridTextColumn Binding="{Binding address}" Header="Адрес"/>
                                 <DataGridTextColumn Binding="{Binding phone}" Header="Телефон"/>
                                 <DataGridTextColumn Binding="{Binding position_set_date}" Header="Дата назначения на должность"/>
-                                <DataGridTextColumn Binding="{Binding shop}" Header="Цех"/>
+                                <DataGridTextColumn Binding="{Binding shop.number}" Header="Цех"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -46,13 +50,14 @@
                     <StackPanel>
                         <WrapPanel>
                             <Button x:Name="addCustomerButton"  Content="Добавить" Margin="3" Padding="3"  Click="addCustomerButton_Click"></Button>
-                            <Button x:Name="editCustomerButton"  Content="Удалить" Margin="3" Padding="3"></Button>
-                            <Button x:Name="deleteCustomerButton"  Content="Изменить" Margin="3" Padding="3"></Button>
+                            <Button x:Name="editCustomerButton"  Content="Изменить" Margin="3" Padding="3" Click="editCustomerButton_Click"></Button>
+                            <Button x:Name="deleteCustomerButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteCustomerButton_Click"></Button>
+                            <Button x:Name="ReportCustomerButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportCustomerButton_Click"></Button>
                         </WrapPanel>
-                        <DataGrid AutoGenerateColumns="False" x:Name="customersGrid">
+                        <DataGrid AutoGenerateColumns="False" x:Name="customersGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="Id" Visibility="Hidden"/>
-                                <DataGridTextColumn Binding="{Binding name}" Header="Наименование"/>
+                                <DataGridTextColumn Binding="{Binding Name}" Header="Наименование"/>
                                 <DataGridTextColumn Binding="{Binding address}" Header="Адресс"/>
                                 <DataGridTextColumn Binding="{Binding phone}" Header="Телефон"/>
                             </DataGrid.Columns>
@@ -70,16 +75,17 @@
                     <StackPanel>
                         <WrapPanel>
                             <Button x:Name="addProductButton"  Content="Добавить" Margin="3" Padding="3" Click="addProductButton_Click"></Button>
-                            <Button x:Name="editProductButton"  Content="Удалить" Margin="3" Padding="3"></Button>
-                            <Button x:Name="deleteProductButton"  Content="Изменить" Margin="3" Padding="3"></Button>
+                            <Button x:Name="editProductButton"  Content="Изменить" Margin="3" Padding="3" Click="editProductButton_Click"></Button>
+                            <Button x:Name="deleteProductButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteProductButton_Click"></Button>
+                            <Button x:Name="ReportProductButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportProductButton_Click"></Button>
                         </WrapPanel>
-                        <DataGrid AutoGenerateColumns="False" x:Name="productsGrid">
+                        <DataGrid AutoGenerateColumns="False" x:Name="productsGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="Id" Visibility="Hidden"/>
                                 <DataGridTextColumn Binding="{Binding name}" Header="Наименование"/>
                                 <DataGridTextColumn Binding="{Binding price}" Header="Цена"/>
                                 <DataGridTextColumn Binding="{Binding shelf_life}" Header="Срок годности"/>
-                                <DataGridTextColumn Binding="{Binding type}" Header="Вид продукции"/>
+                                <DataGridTextColumn Binding="{Binding type.name}" Header="Вид продукции"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -95,14 +101,17 @@
                     <StackPanel>
                         <WrapPanel>
                             <Button x:Name="addPlanButton"  Content="Добавить" Margin="3" Padding="3" Click="addPlanButton_Click"></Button>
-                            <Button x:Name="editPlanButton"  Content="Удалить" Margin="3" Padding="3"></Button>
-                            <Button x:Name="deletePlanButton"  Content="Изменить" Margin="3" Padding="3"></Button>
+                            <Button x:Name="editPlanButton"  Content="Изменить" Margin="3" Padding="3" Click="editPlanButton_Click"></Button>
+                            <Button x:Name="deletePlanButton"  Content="Удалить" Margin="3" Padding="3" Click="deletePlanButton_Click"></Button>
+                            <Button x:Name="ReportPlanButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportPlanButton_Click"></Button>
                         </WrapPanel>
-                        <DataGrid AutoGenerateColumns="False" x:Name="plansGrid">
+                        <DataGrid AutoGenerateColumns="False" x:Name="plansGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
                                 <DataGridTextColumn Binding="{Binding date}" Header="Дата"/>
-                                <DataGridTextColumn Binding="{Binding shop}" Header="Цех"/>
+                                <DataGridTextColumn Binding="{Binding count}" Header="Количество"/>
+                                <DataGridTextColumn Binding="{Binding shop.number}" Header="Цех"/>
+                                <!--<DataGridTextColumn Binding="{Binding product.name}" Header="Продукция"/>-->
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -118,16 +127,21 @@
                     <StackPanel>
                         <WrapPanel>
                             <Button x:Name="addOrderButton"  Content="Добавить" Margin="3" Padding="3" Click="addOrderButton_Click"></Button>
-                            <Button x:Name="editOrderButton"  Content="Удалить" Margin="3" Padding="3"></Button>
-                            <Button x:Name="deleteOrderButton"  Content="Изменить" Margin="3" Padding="3"></Button>
+                            <Button x:Name="editOrderButton"  Content="Изменить" Margin="3" Padding="3" Click="editOrderButton_Click" ></Button>
+                            <Button x:Name="deleteOrderButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteOrderButton_Click"></Button>
+                            <Button x:Name="ReportOrderButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportOrderButton_Click"></Button>
                         </WrapPanel>
-                        <DataGrid AutoGenerateColumns="False" x:Name="ordersGrid">
+                        <DataGrid AutoGenerateColumns="False" x:Name="ordersGrid"   IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
                                 <DataGridTextColumn Binding="{Binding date}" Header="Дата"/>
                                 <DataGridTextColumn Binding="{Binding status}" Header="Статус"/>
-                                <DataGridTextColumn Binding="{Binding Employee}" Header="Сотрудник"/>
-                                <DataGridTextColumn Binding="{Binding customer}" Header="Заказчик"/>
+                                <DataGridTextColumn Binding="{Binding count}" Header="Количество"/>
+                                <DataGridTextColumn Binding="{Binding customer.Name}" Header="Заказчик"/>
+                                <DataGridTextColumn Binding="{Binding employee.fName}" Header="Сотрудник"/>
+                                <DataGridTextColumn Binding="{Binding product.name}" Header="Продукт"/>
+                                <!--<DataGridTextColumn Binding="{Binding Employee}" Header="Сотрудник"/>
+                                <DataGridTextColumn Binding="{Binding customer}" Header="Заказчик"/>-->
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -143,16 +157,18 @@
                     <StackPanel>
                         <WrapPanel>
                             <Button x:Name="addShipmentButton"  Content="Добавить" Margin="3" Padding="3" Click="addShipmentButton_Click"></Button>
-                            <Button x:Name="editShipmentButton"  Content="Удалить" Margin="3" Padding="3"></Button>
-                            <Button x:Name="deleteShipmentButton"  Content="Изменить" Margin="3" Padding="3"></Button>
+                            <Button x:Name="editShipmentButton"  Content="Изменить" Margin="3" Padding="3" Click="editShipmentButton_Click"></Button>
+                            <Button x:Name="deleteShipmentButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteShipmentButton_Click"></Button>
+                            <Button x:Name="ReportShipmentButton"  Content="Создать отчёт" Margin="3" Padding="3"></Button>
                         </WrapPanel>
-                        <DataGrid AutoGenerateColumns="False" x:Name="shipmentsGrid">
+                        <DataGrid AutoGenerateColumns="False" x:Name="shipmentsGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
-                                <DataGridTextColumn Binding="{Binding order}" Header="Заказ"/>
+                                <!--<DataGridTextColumn Binding="{Binding Order.status}" Header="Заказ"/>-->
                                 <DataGridTextColumn Binding="{Binding count}" Header="Количество"/>
                                 <DataGridTextColumn Binding="{Binding departure_date}" Header="Дата отправки"/>
                                 <DataGridTextColumn Binding="{Binding receiving_date}" Header="Дата получения"/>
+                                <!--<DataGridTextColumn Binding="{Binding product_in_stock}" Header="Склад"/>-->
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -168,17 +184,18 @@
                     <StackPanel>
                         <WrapPanel>
                             <Button x:Name="addProduct_in_stockButton"  Content="Добавить" Margin="3" Padding="3" Click="addProduct_in_stockButton_Click"></Button>
-                            <Button x:Name="editProduct_in_stockButton"  Content="Удалить" Margin="3" Padding="3"></Button>
-                            <Button x:Name="deleteProduct_in_stockButton"  Content="Изменить" Margin="3" Padding="3"></Button>
+                            <Button x:Name="editProduct_in_stockButton"  Content="Изменить" Margin="3" Padding="3" Click="editProduct_in_stockButton_Click"></Button>
+                            <Button x:Name="deleteProduct_in_stockButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteProduct_in_stockButton_Click"></Button>
+                            <Button x:Name="ReportProduct_in_stockButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportProduct_in_stockButton_Click"></Button>
                         </WrapPanel>
-                        <DataGrid AutoGenerateColumns="False" x:Name="product_in_stockGrid">
+                        <DataGrid AutoGenerateColumns="False" x:Name="product_in_stockGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
                                 <DataGridTextColumn Binding="{Binding count}" Header="Количество"/>
                                 <DataGridTextColumn Binding="{Binding manufacture_date}" Header="Дата изготовления"/>
-                                <DataGridTextColumn Binding="{Binding shop}" Header="Цех"/>
-                                <DataGridTextColumn Binding="{Binding product}" Header="Продукт"/>
-                                <DataGridTextColumn Binding="{Binding employee}" Header="Сотрудник"/>
+                                <DataGridTextColumn Binding="{Binding shop.number}" Header="Цех"/>
+                                <DataGridTextColumn Binding="{Binding product.name}" Header="Продукт"/>
+                                <DataGridTextColumn Binding="{Binding employee.fName}" Header="Сотрудник"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -194,14 +211,15 @@
                     <StackPanel>
                         <WrapPanel>
                             <Button x:Name="addProduct_typeButton"  Content="Добавить" Margin="3" Padding="3" Click="addProduct_typeButton_Click"></Button>
-                            <Button x:Name="editProduct_typeButton"  Content="Удалить" Margin="3" Padding="3"></Button>
-                            <Button x:Name="deleteProduct_typeButton"  Content="Изменить" Margin="3" Padding="3"></Button>
+                            <Button x:Name="editProduct_typeButton"  Content="Изменить" Margin="3" Padding="3" Click="editProduct_typeButton_Click"></Button>
+                            <Button x:Name="deleteProduct_typeButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteProduct_typeButton_Click"></Button>
+                            <Button x:Name="ReportProduct_typeButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportProduct_typeButton_Click"></Button>
                         </WrapPanel>
-                        <DataGrid AutoGenerateColumns="False" x:Name="product_typeGrid">
+                        <DataGrid AutoGenerateColumns="False" x:Name="product_typeGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
                                 <DataGridTextColumn Binding="{Binding name}" Header="Наименование"/>
-                                <DataGridTextColumn Binding="{Binding shop}" Header="Цех"/>
+                                <DataGridTextColumn Binding="{Binding shop.number}" Header="Цех"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -217,10 +235,10 @@
                     <StackPanel>
                         <WrapPanel>
                             <Button x:Name="addShopButton"  Content="Добавить" Margin="3" Padding="3" Click="addShopButton_Click"></Button>
-                            <Button x:Name="editShopButton"  Content="Удалить" Margin="3" Padding="3"></Button>
-                            <Button x:Name="deleteShopButton"  Content="Изменить" Margin="3" Padding="3"></Button>
+                            <Button x:Name="editShopButton"  Content="Изменить" Margin="3" Padding="3" Click="editShopButton_Click"></Button>
+                            <Button x:Name="deleteShopButton"  Content="Удалить" Margin="3" Padding="3" Click="deleteShopButton_Click"></Button>
                         </WrapPanel>
-                        <DataGrid AutoGenerateColumns="False" x:Name="shopGrid">
+                        <DataGrid AutoGenerateColumns="False" x:Name="shopGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
                                 <DataGridTextColumn Binding="{Binding number}" Header="Номер"/>

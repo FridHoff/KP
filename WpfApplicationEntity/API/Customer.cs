@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WpfApplicationEntity.API
 {
-    class Customer
+    public class Customer
     {
         [Key]
         public int  ID { get; set; }
@@ -15,6 +15,7 @@ namespace WpfApplicationEntity.API
         [Required]
         public string address { get; set; }
         [Required]
-        public string phone { get; set; }       
+        public string phone { get; set; }
+        public virtual ICollection<Order> order { get; set; }
     }
 }

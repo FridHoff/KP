@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApplicationEntity.API;
 
 namespace WpfApplicationEntity.Forms
 {
@@ -19,15 +20,25 @@ namespace WpfApplicationEntity.Forms
     /// </summary>
     public partial class ProductWindow : Window
     {
-        private bool add_edit;
+        private bool add_edit=false;
+        int index;
         public ProductWindow()
         {
             InitializeComponent();
         }
-        public ProductWindow(bool add_edit)
+        public ProductWindow(int id)
         {
             InitializeComponent();
-            this.add_edit = add_edit;
+            this.add_edit = true;
+            index = id;
+            using (WpfApplicationEntity.API.MyDBContext objectMyDBContext = new WpfApplicationEntity.API.MyDBContext())
+            {
+                WpfApplicationEntity.API.Product product = WpfApplicationEntity.API.DatabaseRequest.GetProductById(objectMyDBContext, index);
+                textBlockAddEditlshelf_life.Text = product.shelf_life;
+                textBlockAddEditprice.Text = product.price.ToString();
+                textBlockAddEditname.Text = product.name;
+            }
+            ButtonAddEdit.Content = "Изменить";        
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)
@@ -35,23 +46,33 @@ namespace WpfApplicationEntity.Forms
             if (this.add_edit == true)
                 if (textBlockAddEditname.Text != string.Empty
                     && textBlockAddEditprice.Text != string.Empty
-                    && textBlockAddEditlshelf_life.Text != string.Empty
-                    && textBlockAddEditltype.Text != string.Empty)
+                    && textBlockAddEditlshelf_life.Text != string.Empty)
                 {
                     WpfApplicationEntity.API.Product objectProduct = new WpfApplicationEntity.API.Product();
                     objectProduct.name = textBlockAddEditname.Text;
                     objectProduct.price = Convert.ToDouble(textBlockAddEditprice.Text);
                     objectProduct.shelf_life = textBlockAddEditlshelf_life.Text;
-                    //objectProduct.type = textBlockAddEditlphone.Text;
+                    objectProduct.type = findType(type.SelectedItem.ToString());
                     try
                     {
                         using (WpfApplicationEntity.API.MyDBContext objectMyDBContext =
-                            new WpfApplicationEntity.API.MyDBContext())
+                         new WpfApplicationEntity.API.MyDBContext())
                         {
-                            objectMyDBContext.Products.Add(objectProduct);
+                            if (add_edit == false)
+                                objectMyDBContext.Products.Add(objectProduct);
+                            else
+                            {
+                                objectProduct.ID = index;
+                                WpfApplicationEntity.API.Product objectFromDataBase = new WpfApplicationEntity.API.Product();
+                                objectFromDataBase = WpfApplicationEntity.API.DatabaseRequest.GetProductById(objectMyDBContext, index);
+                                objectMyDBContext.Entry(objectFromDataBase).CurrentValues.SetValues(objectProduct);
+                            }
                             objectMyDBContext.SaveChanges();
                         }
-                        MessageBox.Show("Продукт добавлен");
+                        if (add_edit == false)
+                            MessageBox.Show("Продукт добавлен");
+                        else
+                            MessageBox.Show("Продукт изменён");
                         this.DialogResult = true;
                     }
                     catch (Exception ex)
@@ -64,6 +85,34 @@ namespace WpfApplicationEntity.Forms
                     MessageBox.Show("Заполните все поля!", "Ошибка!");
                     this.DialogResult = false;
                 }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            using (MyDBContext DB = new MyDBContext())
+            {
+                List<string> tNames = new List<string>();
+                var types = DatabaseRequest.GetType(DB);
+                foreach (var item in types)
+                {
+                    tNames.Add(item.name.ToString());
+                }
+                type.ItemsSource = tNames;               
+            }
+        }
+        private Product_Type findType(string custName)
+        {
+            Product_Type cust = new Product_Type();
+            using (MyDBContext DB = new MyDBContext())
+            {
+                var customers = DatabaseRequest.GetType(DB);
+                foreach (var item in customers)
+                {
+                    if (custName == item.name.ToString())
+                        cust = item;
+                }
+            }
+            return cust;
         }
     }
 }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\
+H:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\
 WpfApplicationEntity
 none
 false
 DEBUG;TRACE
-F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\App.xaml
-5-469706448
+H:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\App.xaml
+11-276311939
 
-23-166637709
-15143356178
-Forms\CustomerWindow.xaml;Forms\EmployeeWindow.xaml;Forms\ProductWindow.xaml;Forms\ShopWindow.xaml;Forms\MainWindow.xaml;
+28-578176571
+17454831777
+Forms\CustomerWindow.xaml;Forms\EmployeeWindow.xaml;Forms\OrderWindow.xaml;Forms\PlanWindow.xaml;Forms\ProductWindow.xaml;Forms\Product_in_stockWindow.xaml;Forms\Product_typeWindow.xaml;Forms\ShipmentWindow.xaml;Forms\ShopWindow.xaml;Forms\MainWindow.xaml;Forms\Start.xaml;
 
-False
+True
 

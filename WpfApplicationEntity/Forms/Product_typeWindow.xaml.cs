@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApplicationEntity.API;
 
 namespace WpfApplicationEntity.Forms
 {
@@ -19,15 +20,23 @@ namespace WpfApplicationEntity.Forms
     /// </summary>
     public partial class Product_typeWindow : Window
     {
-        private bool add_edit;
+        private bool add_edit=false;
+        int index;
         public Product_typeWindow()
         {
             InitializeComponent();
         }
-        public Product_typeWindow(bool add_edit)
+        public Product_typeWindow(int id)
         {
             InitializeComponent();
-            this.add_edit = add_edit;
+            this.add_edit = true;
+            index = id;
+            using (WpfApplicationEntity.API.MyDBContext objectMyDBContext = new WpfApplicationEntity.API.MyDBContext())
+            {
+                WpfApplicationEntity.API.Product_Type productType = WpfApplicationEntity.API.DatabaseRequest.GetTypeById(objectMyDBContext, index);
+               name.Text = productType.name;
+            }
+            ButtonAddEdit.Content = "Изменить";        
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)
@@ -37,16 +46,28 @@ namespace WpfApplicationEntity.Forms
                     && shop.Text != string.Empty)
                 {
                     WpfApplicationEntity.API.Product_Type objectProduct_type = new WpfApplicationEntity.API.Product_Type();
-                    objectProduct_type.name = name.Text;                   
+                    objectProduct_type.name = name.Text;
+                    objectProduct_type.shop = findShop(shop.SelectedItem.ToString());
                     try
                     {
                         using (WpfApplicationEntity.API.MyDBContext objectMyDBContext =
-                            new WpfApplicationEntity.API.MyDBContext())
+                         new WpfApplicationEntity.API.MyDBContext())
                         {
-                            objectMyDBContext.Product_types.Add(objectProduct_type);
+                            if (add_edit == false)
+                                objectMyDBContext.Product_types.Add(objectProduct_type);
+                            else
+                            {
+                                objectProduct_type.ID = index;
+                                WpfApplicationEntity.API.Product_Type objectFromDataBase = new WpfApplicationEntity.API.Product_Type();
+                                objectFromDataBase = WpfApplicationEntity.API.DatabaseRequest.GetTypeById(objectMyDBContext, index);
+                                objectMyDBContext.Entry(objectFromDataBase).CurrentValues.SetValues(objectProduct_type);
+                            }
                             objectMyDBContext.SaveChanges();
                         }
-                        MessageBox.Show("Вид продукции добавлен");
+                        if (add_edit == false)
+                            MessageBox.Show("Продукт добавлен");
+                        else
+                            MessageBox.Show("Продукт изменён");
                         this.DialogResult = true;
                     }
                     catch (Exception ex)
@@ -59,6 +80,34 @@ namespace WpfApplicationEntity.Forms
                     MessageBox.Show("Заполните все поля!", "Ошибка!");
                     this.DialogResult = false;
                 }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            using (MyDBContext DB = new MyDBContext())
+            {
+                List<string> numbers = new List<string>();
+                var shops = DatabaseRequest.GetShops(DB);
+                foreach (var item in shops)
+                {
+                    numbers.Add(item.ID.ToString());
+                }
+                shop.ItemsSource = numbers;               
+            }
+        }
+        private Shop findShop(string ProdName)
+        {
+            Shop prod = new Shop();
+            using (MyDBContext DB = new MyDBContext())
+            {
+                var customers = DatabaseRequest.GetShops(DB);
+                foreach (var item in customers)
+                {
+                    if (ProdName == item.ID.ToString())
+                        prod = item;
+                }
+            }
+            return prod;
         }
     }
 }
