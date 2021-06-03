@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\App.xaml
-21365867237
+101206550809
 
-21727085418
+29983888328
 15143356178
-Forms\GroupWindow.xaml;Forms\MainWindow.xaml;
+Forms\CustomerWindow.xaml;Forms\EmployeeWindow.xaml;Forms\OrderWindow.xaml;Forms\PlanWindow.xaml;Forms\ProductWindow.xaml;Forms\Product_in_stockWindow.xaml;Forms\Product_typeWindow.xaml;Forms\ShipmentWindow.xaml;Forms\ShopWindow.xaml;Forms\MainWindow.xaml;
 
-False
+True
 
