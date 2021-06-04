@@ -31,7 +31,7 @@ namespace WpfApplicationEntity
         public MainWindow(Employee user)
         {
             InitializeComponent();
-            this.currentUser = user;         
+            this.currentUser = user;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -60,7 +60,7 @@ namespace WpfApplicationEntity
             {
                 MessageBox.Show(ex.Message, "ОШИБКА", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-        }     
+        }
         #region Отгрузка
         private void addShipmentButton_Click(object sender, RoutedEventArgs e)
         {
@@ -899,13 +899,53 @@ namespace WpfApplicationEntity
 
         private void Export_Click(object sender, RoutedEventArgs e)
         {
-            ExportImport.ExportDataBase();
+            if (shopGrid.HasItems &&
+            employeesGrid.HasItems &&
+            customersGrid.HasItems &&
+            ordersGrid.HasItems &&
+            shipmentsGrid.HasItems &&
+            product_in_stockGrid.HasItems &&
+            product_typeGrid.HasItems &&
+            plansGrid.HasItems &&
+            productsGrid.HasItems)
+                ExportImport.ExportDataBase();
+            else
+                MessageBox.Show("Заполнены не все таблицы");
         }
 
         private void Import_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+
+            using (WpfApplicationEntity.API.MyDBContext objectMyDBContext = new WpfApplicationEntity.API.MyDBContext())
+            {
+                objectMyDBContext.Database.Delete();
+                    objectMyDBContext.Database.Create();
+                    WpfApplicationEntity.API.Shop objectShop = new WpfApplicationEntity.API.Shop();
+                    objectShop.number = "Нет";
+                    objectMyDBContext.Shops.Add(objectShop);
+                    WpfApplicationEntity.API.Employee objectEmployee = new WpfApplicationEntity.API.Employee();
+                    objectEmployee.fName = "User";
+                    objectEmployee.name = "Admin";
+                    objectEmployee.lName = "Userski";
+                    objectEmployee.position = "Администратор";
+                    objectEmployee.login = "Admin";
+                    objectEmployee.password = "admin";
+                    objectEmployee.birth_date = "02.06.2021";
+                    objectEmployee.address = "home";
+                    objectEmployee.phone = "543543";
+                    objectEmployee.position_set_date = "03.06.2021";
+                    objectMyDBContext.Employees.Add(objectEmployee);
+                    objectMyDBContext.SaveChanges();
+                }
             ExportImport.ImportDataBase();
             ShowAll();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

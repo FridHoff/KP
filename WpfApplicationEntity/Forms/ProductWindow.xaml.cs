@@ -108,17 +108,17 @@ namespace WpfApplicationEntity.Forms
         }
         private Product_Type findType(string custName)
         {
-            Product_Type cust = new Product_Type();
+            //Product_Type cust = new Product_Type();
             using (MyDBContext DB = new MyDBContext())
             {
                 var customers = DatabaseRequest.GetType(DB);
                 foreach (var item in customers)
                 {
                     if (custName == item.name.ToString())
-                        cust = item;
+                        return item;
                 }
             }
-            return cust;
+            return null;
         }
     }
 }

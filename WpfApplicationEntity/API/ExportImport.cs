@@ -17,8 +17,8 @@ namespace WpfApplicationEntity.API
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 try
-                {
-                    File = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Confectionery.csv", false, Encoding.Unicode);
+                {                  
+                        File = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Confectionery.csv", false, Encoding.Unicode);
                     SelectTable("SELECT * FROM Employees", connection);//0
                     SelectTable("SELECT * FROM Customers", connection);//1
                     SelectTable("SELECT * FROM Orders", connection);//2
@@ -29,6 +29,7 @@ namespace WpfApplicationEntity.API
                     SelectTable("SELECT * FROM Shipments", connection);//7
                     SelectTable("SELECT * FROM Shops", connection);       //8             
                     File.Close();
+                    MessageBox.Show("База данных успешно сохранена", "Успех");
                 }
                 catch (Exception ex)
                 {
@@ -39,7 +40,6 @@ namespace WpfApplicationEntity.API
                     if (connection.State == ConnectionState.Open)
                         connection.Close();
                     connection.Dispose();
-                    MessageBox.Show("База данных успешно сохранена", "Успех");
                 }
             }
         }

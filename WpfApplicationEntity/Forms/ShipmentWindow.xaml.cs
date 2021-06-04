@@ -117,31 +117,31 @@ namespace WpfApplicationEntity.Forms
         }
         private Order findOrder(string ProdName)
         {
-            Order prod = new Order();
+          //  Order prod = new Order();
             using (MyDBContext DB = new MyDBContext())
             {
                 var customers = DatabaseRequest.GetOrders(DB);
                 foreach (var item in customers)
                 {
                     if (ProdName == item.ID.ToString())
-                        prod = item;
+                        return item;
                 }
             }
-            return prod;
+            return null;
         }
         private Product_in_stock findStock(string ProdName)
         {
-            Product_in_stock prod = new Product_in_stock();
+            //Product_in_stock prod = new Product_in_stock();
             using (MyDBContext DB = new MyDBContext())
             {
                 var customers = DatabaseRequest.GetProductInStock(DB);
                 foreach (var item in customers)
                 {
                     if (ProdName == item.ID.ToString())
-                        prod = item;
+                        return item;
                 }
             }
-            return prod;
+            return null;
         }
     }
 }

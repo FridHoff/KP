@@ -40,8 +40,7 @@ namespace WpfApplicationEntity.Forms
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)
-        {
-            if (this.add_edit == true)
+        {            
                 if (name.Text != string.Empty
                     && shop.Text != string.Empty)
                 {
@@ -97,17 +96,17 @@ namespace WpfApplicationEntity.Forms
         }
         private Shop findShop(string ProdName)
         {
-            Shop prod = new Shop();
+         //   Shop prod = new Shop();
             using (MyDBContext DB = new MyDBContext())
             {
                 var customers = DatabaseRequest.GetShops(DB);
                 foreach (var item in customers)
                 {
                     if (ProdName == item.ID.ToString())
-                        prod = item;
+                        return item;
                 }
             }
-            return prod;
+            return null;
         }
     }
 }

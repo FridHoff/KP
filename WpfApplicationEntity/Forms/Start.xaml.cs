@@ -46,7 +46,7 @@ namespace WpfApplicationEntity.Forms
                         }
                         if (employee.position == "Кладовщик")
                         {
-                            ForemanWindow main = new ForemanWindow(employee);
+                            StorekeeperWindow main = new StorekeeperWindow(employee);
                             this.Hide();
                             main.Show();
                         }

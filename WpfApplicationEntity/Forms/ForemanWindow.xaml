@@ -125,9 +125,6 @@
                 </TabItem.Header>
                 <TabItem.Content>
                     <StackPanel>
-                        <WrapPanel>
-                            <Button x:Name="ReportProduct_typeButton"  Content="Создать отчёт" Margin="3" Padding="3" Click="ReportProduct_typeButton_Click"></Button>
-                        </WrapPanel>
                         <DataGrid AutoGenerateColumns="False" x:Name="product_typeGrid"  IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>

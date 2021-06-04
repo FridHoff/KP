@@ -241,3 +241,7 @@ F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEn
 F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.GenerateResource.cache
 F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CoreCompileInputs.cache
 F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\WpfApplicationEntity.csproj.CopyComplete
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ForemanWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\StorekeeperWindow.g.cs
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\ForemanWindow.baml
+F:\!Курсовая 2.0\!Курсовая\WpfApplicationEntity\WpfApplicationEntity\obj\Debug\Forms\StorekeeperWindow.baml

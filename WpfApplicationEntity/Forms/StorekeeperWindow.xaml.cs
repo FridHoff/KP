@@ -43,7 +43,8 @@ namespace WpfApplicationEntity.Forms
             {
                 using (WpfApplicationEntity.API.MyDBContext objectMyDBContext =
                     new WpfApplicationEntity.API.MyDBContext())
-                {                                     
+                {                      
+                    
                     customersGrid.ItemsSource = WpfApplicationEntity.API.DatabaseRequest.GetCustomer(objectMyDBContext);
                     ordersGrid.ItemsSource = WpfApplicationEntity.API.DatabaseRequest.GetOrders(objectMyDBContext);
                     shipmentsGrid.ItemsSource = WpfApplicationEntity.API.DatabaseRequest.GetShipment(objectMyDBContext);

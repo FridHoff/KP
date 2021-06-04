@@ -119,22 +119,22 @@ namespace WpfApplicationEntity.Forms
                 {
                     numbers.Add(item.ID.ToString());
                 }
-                textBlockAddEditshop.ItemsSource = numbers;
+                textBlockAddEditshop.ItemsSource = numbers;                
             }
         }
         private Shop findShop(string ProdName)
         {
-            Shop prod = new Shop();
+            //Shop prod = new Shop();
             using (MyDBContext DB = new MyDBContext())
             {
                 var customers = DatabaseRequest.GetShops(DB);
                 foreach (var item in customers)
                 {
                     if (ProdName == item.ID.ToString())
-                        prod = item;
+                        return item;
                 }
             }
-            return prod;
+            return null;
         }
     }
 }

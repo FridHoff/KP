@@ -38,8 +38,7 @@ namespace WpfApplicationEntity.Forms
         }
 
         private void ButtonAddEditShop_Click(object sender, RoutedEventArgs e)
-        {
-            if (this.add_edit == true)
+        {            
                 if (textBlockAddEditShop.Text != string.Empty)
                 {
                     WpfApplicationEntity.API.Shop objectShop = new WpfApplicationEntity.API.Shop();
@@ -61,9 +60,9 @@ namespace WpfApplicationEntity.Forms
                             objectMyDBContext.SaveChanges();
                         }
                         if (add_edit == false)
-                            MessageBox.Show("Продукт добавлен");
+                            MessageBox.Show("Цех добавлен");
                         else
-                            MessageBox.Show("Продукт изменён");
+                            MessageBox.Show("Цех изменён");
                         this.DialogResult = true;
                     }
                     catch (Exception ex)
