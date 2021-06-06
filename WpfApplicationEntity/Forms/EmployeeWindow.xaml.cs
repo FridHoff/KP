@@ -117,24 +117,48 @@ namespace WpfApplicationEntity.Forms
                 var shops = DatabaseRequest.GetShops(DB);
                 foreach (var item in shops)
                 {
-                    numbers.Add(item.ID.ToString());
+                    numbers.Add(item.number.ToString());
                 }
                 textBlockAddEditshop.ItemsSource = numbers;                
             }
         }
         private Shop findShop(string ProdName)
         {
-            //Shop prod = new Shop();
             using (MyDBContext DB = new MyDBContext())
             {
                 var customers = DatabaseRequest.GetShops(DB);
                 foreach (var item in customers)
                 {
-                    if (ProdName == item.ID.ToString())
+                    if (ProdName == item.number.ToString())
                         return item;
                 }
             }
             return null;
+        }
+        private bool freeLogin(string login)
+        {
+            using (MyDBContext DB = new MyDBContext())
+            {
+                var logins = DatabaseRequest.GetEmployees(DB);                
+                foreach (var item in logins)
+                {
+                    if (login == item.login.ToString())
+                    {
+            return false;                        
+                    }                       
+                }
+            return true;
+            }
+        }
+
+        private void textBlockAddEditlogin_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (add_edit == false)
+                if (!freeLogin(textBlockAddEditlogin.Text))
+            {
+                MessageBox.Show("Этот логин уже занят");
+                textBlockAddEditlogin.Text = "";
+            }
         }
     }
 }

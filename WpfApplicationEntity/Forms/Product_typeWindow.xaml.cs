@@ -89,7 +89,7 @@ namespace WpfApplicationEntity.Forms
                 var shops = DatabaseRequest.GetShops(DB);
                 foreach (var item in shops)
                 {
-                    numbers.Add(item.ID.ToString());
+                    numbers.Add(item.number.ToString());
                 }
                 shop.ItemsSource = numbers;               
             }
@@ -102,7 +102,7 @@ namespace WpfApplicationEntity.Forms
                 var customers = DatabaseRequest.GetShops(DB);
                 foreach (var item in customers)
                 {
-                    if (ProdName == item.ID.ToString())
+                    if (ProdName == item.number.ToString())
                         return item;
                 }
             }

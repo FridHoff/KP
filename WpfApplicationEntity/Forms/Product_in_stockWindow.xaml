@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplicationEntity.Forms"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="Product in stock" Height="200" Width="200">
+        Title="Product in stock" Height="200" Width="200" WindowStyle="ToolWindow">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>

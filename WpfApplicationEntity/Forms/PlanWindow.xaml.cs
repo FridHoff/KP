@@ -89,20 +89,19 @@ namespace WpfApplicationEntity.Forms
                 var shops = DatabaseRequest.GetShops(DB);
                 foreach (var item in shops)
                 {
-                    numbers.Add(item.ID.ToString());
+                    numbers.Add(item.number.ToString());
                 }
                 shop.ItemsSource = numbers;
             }
         }
         private Shop findShop(string ProdName)
-        {
-            //Shop prod = new Shop();
+        {            
             using (MyDBContext DB = new MyDBContext())
             {
                 var customers = DatabaseRequest.GetShops(DB);
                 foreach (var item in customers)
                 {
-                    if (ProdName == item.ID.ToString())
+                    if (ProdName == item.number.ToString())
                         return item;
                 }
             }

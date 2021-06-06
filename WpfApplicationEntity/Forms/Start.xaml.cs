@@ -36,7 +36,7 @@ namespace WpfApplicationEntity.Forms
                         {
                     MainWindow main = new MainWindow(employee);
                     this.Hide();
-                    main.Show();
+                    main.Show();                                                
                         }
                         if (employee.position == "Начальник цеха")
                         {
@@ -48,7 +48,7 @@ namespace WpfApplicationEntity.Forms
                         {
                             StorekeeperWindow main = new StorekeeperWindow(employee);
                             this.Hide();
-                            main.Show();
+                            main.Show();                            
                         }
                         flag = false;
                     break;
@@ -57,6 +57,7 @@ namespace WpfApplicationEntity.Forms
                 if(flag)
                 {
                     MessageBox.Show("Неврно указан логин или пароль");
+                    pass.Password = "";
                 }
             }
         }

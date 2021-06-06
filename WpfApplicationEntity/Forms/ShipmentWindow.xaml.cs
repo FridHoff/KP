@@ -103,14 +103,14 @@ namespace WpfApplicationEntity.Forms
                 var orders = DatabaseRequest.GetOrders(DB);
                 foreach (var item in orders)
                 {
-                    numbers.Add(item.ID.ToString());
+                    numbers.Add(item.ID.ToString()+" "+item.date.ToString()+ " " + item.product.name.ToString());
                 }
                 order.ItemsSource = numbers;
                 List<string> numbers1 = new List<string>();
                 var orders1 = DatabaseRequest.GetProductInStock(DB);
                 foreach (var item in orders1)
                 {
-                    numbers1.Add(item.ID.ToString());
+                    numbers1.Add(item.product.name.ToString());
                 }
                 product_in_stock.ItemsSource = numbers1;
             }
@@ -123,7 +123,7 @@ namespace WpfApplicationEntity.Forms
                 var customers = DatabaseRequest.GetOrders(DB);
                 foreach (var item in customers)
                 {
-                    if (ProdName == item.ID.ToString())
+                    if (ProdName == item.ID.ToString() + " " + item.date.ToString() + " " + item.product.name.ToString())
                         return item;
                 }
             }
@@ -137,7 +137,7 @@ namespace WpfApplicationEntity.Forms
                 var customers = DatabaseRequest.GetProductInStock(DB);
                 foreach (var item in customers)
                 {
-                    if (ProdName == item.ID.ToString())
+                    if (ProdName == item.product.name.ToString())
                         return item;
                 }
             }

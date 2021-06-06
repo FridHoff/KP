@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplicationEntity.Forms"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="EmployeeWindow" Height="400" Width="200">
+        Title="EmployeeWindow" Height="400" Width="200" WindowStyle="ToolWindow">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -40,7 +40,7 @@
         </ComboBox>
         <!--<TextBox x:Name="textBlockAddEditposition" Grid.Column="1" Grid.Row="3" Padding="3" Margin="3"  />-->
         <Label Grid.Column="0" Grid.Row="4" Content="Логин" Padding="3" Margin="3"  />
-        <TextBox x:Name="textBlockAddEditlogin" Grid.Column="1" Grid.Row="4" Padding="3" Margin="3"  />
+        <TextBox x:Name="textBlockAddEditlogin" Grid.Column="1" Grid.Row="4" Padding="3" Margin="3" TextChanged="textBlockAddEditlogin_TextChanged"/>
         <Label Grid.Column="0" Grid.Row="5" Content="Пароль" Padding="3" Margin="3"  />
         <TextBox x:Name="textBlockAddEditpassword" Grid.Column="1" Grid.Row="5" Padding="3" Margin="3"  />
         <Label Grid.Column="0" Grid.Row="6" Content="Дата рождения" Padding="3" Margin="3"  />

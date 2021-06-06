@@ -23,7 +23,7 @@ namespace WpfApplicationEntity
     /// </summary>
     public partial class MainWindow : System.Windows.Window
     {
-        Employee currentUser;
+        Employee currentUser;       
         public MainWindow()
         {
             InitializeComponent();
@@ -946,6 +946,11 @@ namespace WpfApplicationEntity
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            
         }
     }
 }
