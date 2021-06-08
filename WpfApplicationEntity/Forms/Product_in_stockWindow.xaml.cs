@@ -40,7 +40,8 @@ namespace WpfApplicationEntity.Forms
                manufacturing_date.Text = stock.manufacture_date;                
                 count.Text = stock.count.ToString();
             }
-            ButtonAddEdit.Content = "Изменить";        
+            ButtonAddEdit.Content = "Изменить";
+            this.Title = "Изменение продукции на складе";
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)

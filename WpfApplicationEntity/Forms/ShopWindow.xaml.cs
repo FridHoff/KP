@@ -34,7 +34,8 @@ namespace WpfApplicationEntity.Forms
                 WpfApplicationEntity.API.Shop shop = WpfApplicationEntity.API.DatabaseRequest.GetShopsById(objectMyDBContext, index);
                 textBlockAddEditShop.Text = shop.number.ToString();
             }
-            ButtonAddEditShop.Content = "Изменить";      
+            ButtonAddEditShop.Content = "Изменить";
+            this.Title = "Изменение цеха";
         }
 
         private void ButtonAddEditShop_Click(object sender, RoutedEventArgs e)

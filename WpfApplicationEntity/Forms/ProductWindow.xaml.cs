@@ -38,7 +38,8 @@ namespace WpfApplicationEntity.Forms
                 textBlockAddEditprice.Text = product.price.ToString();
                 textBlockAddEditname.Text = product.name;
             }
-            ButtonAddEdit.Content = "Изменить";        
+            ButtonAddEdit.Content = "Изменить";
+            this.Title = "Изменение продукта";
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)

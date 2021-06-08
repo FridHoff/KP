@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplicationEntity.Forms"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="Plan" Height="132" Width="200" WindowStyle="ToolWindow">
+        Title="Добавление плана" Height="132" Width="200" WindowStyle="ToolWindow">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>

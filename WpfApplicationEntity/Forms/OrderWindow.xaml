@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplicationEntity.Forms"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="Order" Height="210" Width="200" WindowStyle="ToolWindow">
+        Title="Добавление заказа" Height="210" Width="200" WindowStyle="ToolWindow">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>

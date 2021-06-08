@@ -38,6 +38,7 @@ namespace WpfApplicationEntity.Forms
                 textBlockAddEditlphone.Text = customer.phone;               
             }
             ButtonAddEdit.Content = "Изменить";
+            this.Title = "Изменение заказчика";
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)

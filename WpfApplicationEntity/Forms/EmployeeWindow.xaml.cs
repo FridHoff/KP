@@ -47,6 +47,7 @@ namespace WpfApplicationEntity.Forms
                 textBlockAddEditposition_set_date.Text = employee.position_set_date;
             }
             ButtonAddEditEmployee.Content = "Изменить";
+            this.Title = "Изменение сотрудника";
         }
 
         private void ButtonAddEditEmployee_Click(object sender, RoutedEventArgs e)

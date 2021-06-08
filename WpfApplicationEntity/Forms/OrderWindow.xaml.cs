@@ -41,6 +41,7 @@ namespace WpfApplicationEntity.Forms
                 count.Text = order.count.ToString();                
             }
             ButtonAddEdit.Content = "Изменить";
+            this.Title = "Изменение заказа";
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)

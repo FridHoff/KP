@@ -38,7 +38,8 @@ namespace WpfApplicationEntity.Forms
                 receiving_date.Text = shipment.receiving_date;
                 count.Text = shipment.count.ToString();
             }
-            ButtonAddEdit.Content = "Изменить";        
+            ButtonAddEdit.Content = "Изменить";
+            this.Title = "Изменение отгрузки";
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)

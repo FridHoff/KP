@@ -36,7 +36,8 @@ namespace WpfApplicationEntity.Forms
                 WpfApplicationEntity.API.Product_Type productType = WpfApplicationEntity.API.DatabaseRequest.GetTypeById(objectMyDBContext, index);
                name.Text = productType.name;
             }
-            ButtonAddEdit.Content = "Изменить";        
+            ButtonAddEdit.Content = "Изменить";
+            this.Title = "Изменение виду продукции";
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)

@@ -36,7 +36,8 @@ namespace WpfApplicationEntity.Forms
                 WpfApplicationEntity.API.Production_plan plan = WpfApplicationEntity.API.DatabaseRequest.GetPlanById(objectMyDBContext, index);
                 date.Text = plan.date;
             }
-            ButtonAddEdit.Content = "Изменить";        
+            ButtonAddEdit.Content = "Изменить";
+            this.Title = "Изменение плана";
         }
 
         private void ButtonAddEdit_Click(object sender, RoutedEventArgs e)
